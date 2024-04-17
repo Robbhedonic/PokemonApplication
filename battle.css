@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 60px;
+}
+
+.pokemon-container-b {
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 500px;
+    background-image: url(image/beauty-forest.jpeg);
+    border: 4px solid white;
+    border-radius: 100px;
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.pokemon-info {
+    flex-basis: 45%;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#battleLog {
+    margin-top: 20px;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-height: 200px;
+    overflow-y: auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pokemon1 h2{
+    color: white;
+    font-size: 16px;
+}
+#pokemon2 h2{
+    color: white;
+    font-size: 16px;
+}
+.pokemon-info {
+    flex-basis: 15%;
+    transition: border 0.5s ease;
+    margin: 60px;
+
+    
+}
+
+.pokemon-info:hover {
+    border: 2px solid #007bff;
+}
+
+#battleLog{
+    background: white;
+    font-size: 14px;
+}
+#pokemon2Image, #pokemon1Image{
+    width: 100px;
+
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    justify-content: space-between;
+}
+#winner{
+
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    background: linear-gradient(to right, #ffd700, #ffaf00, #ff8000);
+    animation: changeColor 5s infinite alternate; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ @keyframes changeColor {
+     0% {
+         background: linear-gradient(to right, #ffd700, #ffaf00, #ff8000);
+     }
+
+     50% {
+         background: linear-gradient(to right, #ff8000, #ffaf00, #ffd700);
+     }
+
+     100% {
+         background: linear-gradient(to right, #ffd700, #ffaf00, #ff8000);
+     }
+ }
+
+ #winner h1{
+    margin: 40px;
+    font-size: 20px;
+ }
+
+ #pokemon1,
+ #pokemon2 {
+    width: 80px;
+    position: relative;
+    margin: 20px;
+ }
+
+  #pokemon1 p,
+  #pokemon2 p {
+     color: white;
+     background-color: rgba(0, 128, 0, 0.465);
+     padding: 5px;
+     border-radius: 20px;
+  }
+
+ #winner img {
+     width: 150px;
+     height: 140px;
+ }
+
+   #pokemon1 h2,
+   #pokemon2 h2 {
+       color: white;
+       background-color: rgba(223, 216, 13, 0.465);
+       padding: 5px;
+       border-radius: 20px;
+       width: 100px;
+      
+   }
+
+

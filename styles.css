@@ -1,0 +1,594 @@
+  body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    /*background-image: url(../image/pokemon-in-the-wild.png);*/
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(60deg, rgba(227, 162, 218, 0.874), rgba(12, 208, 238, 0.863), rgba(231, 180, 121, 0.872));
+    animation: bgAnimatedGradient 1s infinite linear;
+  }
+    @keyframes bgAnimatedGradient {
+      0% {
+        background-position: 0 85%;
+      }
+  
+      50% {
+        background-position: 100% 20%;
+      }
+  
+      100% {
+        background-position: 0% 85%;
+      }
+    }
+.nav{
+  background-color: #ffffff;
+  border-radius: 50px;
+  margin-top: 2%;
+  margin-bottom: 5%;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  border: solid 2px white;
+  backdrop-filter: blur(4px);
+
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  
+  padding-left: 40px;
+  padding-right: 40px;
+  
+}
+
+
+.logo {
+  background-image: url(image/Enamel_Pokeball_01_Top-View.webp);
+  width: 50px;
+  height: 50px;
+  background-size: auto;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  color: rgb(11, 11, 11);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .burger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    margin: 3px;
+  }
+}
+
+.title{
+  width: 500px;
+}
+
+  #battle-log {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .winner {
+    border: 2px solid green;
+  }
+
+  .tie {
+    border: 2px solid gray;
+  }
+
+  #battle-log img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
+  .battlefield {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .battle-log div {
+    display: flex;
+    flex-direction: row;
+  }
+
+.pokemon-card {
+
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+
+label {
+  font-weight: bold;
+}
+
+.info {
+  margin-top: 20px;
+  background-color: rgba(243, 240, 240, 0.48);
+  backdrop-filter: blur(5px);
+  width: 250px;
+  height: 450px;
+  border-radius: 40px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:baseline;
+  line-height: 15px;
+  border: solid 10px white;
+}
+
+.info img{
+  border-radius: 150px;
+  width: 150px;
+  display: flex ;
+  align-self: center;
+  background-size: 600% 600%;
+  background-image: linear-gradient(60deg, rgba(227, 162, 218, 0.874), rgba(12, 208, 238, 0.863) , rgba(231, 180, 121, 0.872) );
+  backdrop-filter: blur(10px);
+  animation: bgAnimatedGradient 2s infinite linear;
+}
+@keyframes bgAnimatedGradient{
+  0%{
+    background-position: 0 85%;
+  }
+
+  50%{
+    background-position: 100% 20%;
+  }
+
+  100%{
+    background-position: 0% 85%;
+  }
+}
+
+
+.info h2{
+  display: flex;
+  align-self: center;
+  font-family: "Chakra Petch", sans-serif;
+  font-style: normal;
+  padding-top: 30px;
+  
+}
+
+.info p {
+ font-size: 18px;
+ line-height: 0px;
+ margin: 15px;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+
+#comparison-result {
+  margin-top: 20px;
+  font-weight: bold;
+}
+h2, h3{
+  text-transform: capitalize;
+  font-family: "Chakra Petch", sans-serif;
+  font-style: normal;
+  font-size: 30px;
+  font-weight: bolder;
+}
+label{
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+select, option{
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+li{
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 20px;
+  
+}
+.main-title{
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+
+}
+.ball-title{
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+ul{
+  list-style-type: none;
+}
+
+#comparison-result{
+  display: flex;
+  flex-direction: column;
+}
+.comparison-block{
+  margin-top: 20px;
+  background-color: rgba(243, 240, 240, 0.48);
+  backdrop-filter: blur(5px);
+  width: 300px;
+  height: 440px;
+  border-radius: 40px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:baseline;
+  line-height: 15px;
+  border: solid 10px white;
+  margin: 20px;
+}
+.comparison-block h3{
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  font-weight: bolder;
+  font-size: 30px;
+
+}
+.comparison-block img{
+
+  border-radius: 150px;
+  width: 150px;
+  display: flex ;
+  align-self: center;
+  background-size: 600% 600%;
+  background-image: linear-gradient(60deg, rgba(227, 162, 218, 0.874), rgba(12, 208, 238, 0.863) , rgba(231, 180, 121, 0.872) );
+  backdrop-filter: blur(10px);
+  animation: bgAnimatedGradient 2s infinite linear;
+
+}
+
+
+
+#comparison-result p{
+  display: flex;
+  align-self: center;
+  text-transform: capitalize;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+.winner{
+  border: green solid 10px;
+}
+.pokemon-comparison{
+  display: flex;
+  flex-direction: row;
+}
+
+
+ .pokemon-container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+ }
+
+
+ .pokemon-image {
+   width: 180px;
+   height: 180px;
+ }
+
+
+.pokemon-container{
+  border-radius: 280px;
+  width: 280px;
+  height: 280px;
+  background-size: 600% 600%;
+  
+  backdrop-filter: blur(10px);
+  background-image: linear-gradient(60deg, rgba(227, 162, 218, 0.874), rgba(12, 208, 238, 0.863), rgba(231, 180, 121, 0.872));
+  animation: bgAnimatedGradient 2s infinite linear;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-self: center;
+
+  margin: 20p;
+
+ }
+ .card-start{
+  background: rgba(255, 255, 255, 0.684);
+  height: 500px;
+  width: 340px;
+  margin: 10px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items:start;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  align-self: self-end;
+  border: 4px white solid;
+  padding: 10px;
+ }
+ .pokemon-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+
+ }
+ .card-start h1{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  
+ }
+
+footer {
+  background-color: #ffffff;
+  color: #1c1c1c;
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  width: 90%;
+  border-radius: 100px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: "Chakra Petch", sans-serif;
+  font-style: normal;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-content {
+    max-width: 90%;
+  }
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.55);
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 20px;
+  width: 250px;
+  height: 500px;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  font-family: "Chakra Petch", sans-serif;
+  font-style: normal;
+  backdrop-filter: blur(2px);
+
+
+}
+
+.card img {
+  display: flex;
+  align-self: center;
+
+  width: 150px;
+
+
+}
+
+.card h3 {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.card p {
+  margin: 5px;
+  border: solid 2px rgb(255, 255, 255);
+  padding: 6px;
+  border-radius: 10px;
+  font-size: 10px;
+}
+
+.gallery{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+
+}
+
+.select-po{
+  width: 80%;
+  height: 40px;
+  background-color: #f9f9f977;
+  border: solid 2px white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 40px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+.select-g{
+  width: 300px;
+  height: 30px;
+  padding: 20px;
+  background-color: #f9f9f977;
+  border: solid 2px white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px;
+  border-radius: 40px;
+}
+
+.comparison-block p {
+  font-size: 18px;
+  line-height: 0px;
+  margin: 15px;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+.game-b{
+  display: flex;
+  flex-direction: row;
+}
+
+.results{
+  background-image: url(image/pngtree-blue-colorful-magic-light-effect-png-image_5823925.jpg);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-back{
+  background-image: url(image/tafHJGQ.jpg) ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+  background-size: cover;
+}
+.promotion{
+  display: flex;
+  flex-direction: row;
+    justify-content: space-between;
+  margin: 1%;
+  font-family: "Chakra Petch", sans-serif;
+  font-style: normal;
+  width: 100%;
+
+}
+.text{
+  font-family: "Chakra Petch", sans-serif;
+  font-style: normal;
+  margin: 4%;
+  background: white;
+  padding: 20px;
+  border-radius: 40px;
+  height: 400px;
+  width: 280px;
+
+
+}
+.text p {
+  text-align: justify;
+  font-size: 12px;
+
+}
+
+.results{
+  display: flex;
+  flex-direction: column;
+  border: 8px white solid;
+  background: rgba(255, 255, 255, 0.65);
+  line-height: 0px;
+
+  width: 100%;
+  text-align: center;
+
+}
+
+.diference{
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+
+
+.image-mov {
+  position: absolute;
+  width: 150px;
+  height: 110px;
+  transition: transform 0.5s ease-in-out;
+    /* Transición suave */
+}
+
+#pokemon1, #pokemon2{
+
+  position: relative;
+  margin: 20px;
+}
+#winner img{
+  width: 150px;
+  height: 200px;
+}
+
+audio{
+  display: flex;
+  align-self: center;
+  padding: 10px;
+}

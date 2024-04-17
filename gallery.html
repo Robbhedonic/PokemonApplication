@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokémon Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <nav>
+        <div class="logo">Logo</div>
+        <div></div>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="gallery.html">Galleria</a></li>
+
+          <li><a href="battle.html">Battle</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="main-title">
+      <img
+        class="title"
+        src="image/International_Pokémon_logo.svg.png"
+        alt=""
+      />
+      <img
+        class="ball-title"
+        src="image/Enamel_Pokeball_01_Top-View.webp"
+        alt=""
+      />
+    </div>
+
+    <div class="filters">
+      <label for="sort">Sort by:</label>
+      <select id="sort">
+        <option value="power-asc">Power (Low to High)</option>
+        <option value="power-desc">Power (High to Low)</option>
+        <option value="weight-asc">Weight (Low to High)</option>
+        <option value="weight-desc">Weight (High to Low)</option>
+        <option value="height-asc">Height (Low to High)</option>
+        <option value="height-desc">Height (High to Low)</option>
+        <option value="type-asc">Type (A-Z)</option>
+        <option value="type-desc">Type (Z-A)</option>
+        <option value="hp-asc">HP (Low to High)</option>
+        <option value="hp-desc">HP (High to Low)</option>
+      </select>
+    </div>
+
+    <div id="gallery" class="gallery"></div>
+    <footer>
+      <div class="footer-content">
+        <p>© 2024 Student Purposes. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="gallery.js"></script>
+  </body>
+</html>

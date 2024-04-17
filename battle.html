@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokémon Battle</title>
+    <link rel="stylesheet" href="battle.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="nav">
+      <nav>
+        <div class="logo">Logo</div>
+        <div></div>
+        <ul class="nav-links">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="gallery.html">Galleria</a></li>
+          <li><a href="battle.html">Battle</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="main-title">
+        <img
+          class="title"
+          src="image/International_Pokémon_logo.svg.png"
+          alt=""
+        />
+        <img
+          class="ball-title"
+          src="image/Enamel_Pokeball_01_Top-View.webp"
+          alt=""
+        />
+      </div>
+      <h1>Battle</h1>
+      <div id="winner"></div>
+      <div class="pokemon-container-b">
+        <div id="pokemon1" class="pokemon-info">
+          <h2>Pokémon 1</h2>
+          <select id="selectPokemon1">
+            <!-- Dynamically populated with Pokémon options -->
+          </select>
+          <img id="pokemon1Image" src="" alt="" />
+          <div id="pokemon1Details"></div>
+        </div>
+        <div id="pokemon2" class="pokemon-info">
+          <h2>Pokémon 2</h2>
+          <select id="selectPokemon2">
+            <!-- Dynamically populated with Pokémon options -->
+          </select>
+          <img id="pokemon2Image" src="" alt="" />
+          <div id="pokemon2Details"></div>
+        </div>
+      </div>
+      <div id="battleLog"></div>
+      <div class="buttons">
+        <button id="startBattle">Start Battle</button>
+        <button id="newBattle" style="display: none">Restart Battle</button>
+        <button id="returnHome" style="display: none">Return Home</button>
+      </div>
+    </div>
+    <script src="battle.js"></script>
+  </body>
+</html>
